@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cards Against Humanity</title>
+        <meta name="description" content="A card against humanity website to play">
+        <meta charset='UTF-8'>
+        <script src='client.js' defer></script>
+        <link href='loginstyle.css' rel='stylesheet' id="loginstyle">
+        <link href="waitingstyle.css" rel = "stylesheet" id="waitingstyle">
+        <link href="game.css" rel = "stylesheet" id="gamestyle">
+        <link href="finishstyle.css" rel = "stylesheet" id="finishstyle">
+        <!--<link rel="icon" href="media/1f5d2.png">-->
+    </head>
+    <body>
+        <div class="login" id="login-div">
+            <h1>Login</h1>
+            <div class="text-field">
+                <input id="username" type="text" required placeholder="Username">
+            </div>
+            <div class="login-button">
+                <input id="connectbtn" type="button" value="Login">
+            </div>
+        </div>
+
+        <div id="waiting-div" style="display: none;">
+            <div class="title">
+                <h1>Waiting for players</h1>
+            </div>
+            <div class="loader">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
+        <div id="playing-div" style="display: none;">
+            <div class="center">
+                <div id="question-div"></div>
+                <div id="voting-div" class="users" style="display: none;"></div>
+                <div id="cards-div" class="cards"></div>
+            </div>
+        </div>
+
+        <div id="finish-div" style="display: none;">
+            <div class="winner-div">
+                <h1 id="winner"></h1>
+            </div>
+            <div id="score-div">
+                <div class="scores-h1">
+                    <h1>Scores:</h1>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

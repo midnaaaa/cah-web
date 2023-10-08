@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(120deg,#0A0908,#22333B );
+}
+
+#question-div{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    text-align: center;
+
+}
+#question-div h1{
+    color: white;
+}
+
+
+.center {
+    padding-inline: 100px;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 100%;
+    overflow-x: hidden; /* Evitar la barra de desplazamiento horizontal */
+    height: auto; /* Establecer la altura del contenedor como automática */
+    padding-block: 20px;
+}
+
+.card {
+    flex: 1; /* Hace que las cartas se expandan para llenar el ancho disponible */
+    max-width: calc(33.33% - 20px); /* Limitar el ancho de cada carta al 33.33% del contenedor */
+    height: 300px; /* Altura fija para simular la forma de una carta */
+    background-color: #fff;
+    border: 2px solid #C6AC8F;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, font-size 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px; /* Tamaño de fuente inicial */
+    overflow: hidden; /* Ocultar cualquier contenido que exceda la altura de la carta */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Subir la carta 5px al pasar el mouse */
+    font-size: 18px; /* Aumentar el tamaño de fuente al pasar el mouse */
+    height: 320px; /* Aumentar la altura de la carta al pasar el mouse */
+}
+
+/* Estilo para la lista de usuarios */
+#voting-div.users {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Estilo para cada carta de usuario */
+.user-div {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #C6AC8F;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    max-width: calc(25% - 20px); /* Para que haya 4 cartas por fila */
+    text-align: center; /* Para centrar el contenido horizontalmente */
+    transition: transform 0.2s ease-in-out; /* Agregar transición para transform */
+
+}
+
+.user-div:hover {
+    transform: translateY(-5px); /* Subir la carta 5px al pasar el mouse */
+    cursor: pointer; /* Cambiar el cursor a un puntero */
+
+}
+
+
+/* Estilo para las respuestas del usuario */
+.user-answers-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.answer {
+    padding: 10px; /* Aumenta el espacio interno */
+    border: 2px solid #ddd; /* Un borde más grueso */
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
+
+.user-container {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

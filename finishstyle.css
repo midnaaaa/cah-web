@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(120deg,#0A0908,#22333B );
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+.winner-div{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+
+}
+
+#score-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    height: 200px
+}
+
+.user-div{
+    padding-inline: 50px;
+    background-color: white;
+    border-radius:10px;
+    padding-top: 10px;
+    text-align: center;
+
+
+
+}
+
+.score{
+    font-weight: bold;
+    display: center;
+}
